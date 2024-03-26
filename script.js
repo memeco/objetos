@@ -15,4 +15,4 @@ car.innerHTML = `<p>Marca: ${carro.marca}</p>
                  <p>Cor: ${carro.cor}</p>
                  <p>Motor: ${carro.motor}</p>
                  <p>Portas: ${carro.portas}</p>
-                 <p>Airbag: ${carro.airbag}</p>`;
+                 <p>Marca: ${carro.marca}</p>`;

@@ -2,18 +2,11 @@ const carro = {
     marca: 'Fiat',
     preco: 50000,
     ano: 2020,
-    cor: "branco",
+    cor: 'branco',
     motor: 1.0,
     portas: 4,
     airbag: true,
 };
-
+ 
 let car = document.getElementById('carro');
-
-for(let propriedade in carro) {
-    if(carro.hasOwnProperty(propriedade)) {
-        let paragrafo = document.createElement('p');
-        paragrafo.textContent = `${propriedade}: ${carro[propriedade]}`;
-        car.appendChild(paragrafo);
-    }
-}
+car.innerHTML = `<pre>${JSON.stringify(carro, null, 2)}</pre>`;

@@ -14,5 +14,15 @@ car.innerHTML = `<p>Marca: ${carro.marca}</p>
                  <p>Ano: ${carro.ano}</p>
                  <p>Cor: ${carro.cor}</p>
                  <p>Motor: ${carro.motor}</p>
-                 <p>Portas: ${carro.portas}</p>
-                 <p>Marca: ${carro.marca}</p>`;
+                 <p>Portas: ${carro.portas}</p>`
+
+let inputMarca = document.getElementById('inserir');
+inputMarca.addEventListener('input', function() {
+    carro.marca = this.value;
+    car.innerHTML = `<p>Marca: ${carro.marca}</p>
+                 <p>Preço: ${carro.preco}</p>
+                 <p>Ano: ${carro.ano}</p>
+                 <p>Cor: ${carro.cor}</p>
+                 <p>Motor: ${carro.motor}</p>
+                 <p>Portas: ${carro.portas}</p>`;
+});
